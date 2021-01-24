@@ -75,7 +75,7 @@ async function cbtnHandler (e) {
         formData.append("eid" , eid.value);
         formData.append("password" , pw.value);
         formData.append("confirmPassword" , cpw.value);
-        let obj = await axios.post("https://foodcolony.herokuapp.com/user/signup", formData);
+        let obj = await axios.post("http://localhost:3000/user/signup", formData);
         
         console.log(obj);
         if (obj.data.data) {

@@ -31,7 +31,7 @@ async function submitbtnHandler(e){
         e.preventDefault(); // prevent page refresh
         if(email.value && pw.value){
             console.log(email.value, pw.value);
-            let obj = await axios.post( "https://foodcolony.herokuapp.com/user/login" , {email:email.value , password:pw.value});
+            let obj = await axios.post( "http://localhost:3000/user/login" , {email:email.value , password:pw.value});
 
             
             console.log(obj);

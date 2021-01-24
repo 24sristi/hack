@@ -18,7 +18,7 @@ window.addEventListener("load", function(){
         formData.append("Image" , file);
         formData.append("Details" , details.value);
         formData.append("category",sub.value);
-        let obj = await axios.post("https://foodcolony.herokuapp.com/dishes/add" , formData);
+        let obj = await axios.post("http://localhost:3000/dishes/add" , formData);
         console.log(obj);
         if(obj.data.message){
             window.location.reload();
@@ -28,7 +28,7 @@ window.addEventListener("load", function(){
          let removeBtn = dishes[i].querySelector(".removeBtn");
 
          removeBtn.addEventListener("click", async function(){
-             let deletedDish = await axios.post("https://foodcolony.herokuapp.com/dishes/deleteDish",{"_id":dishes[i].getAttribute("dishId")})
+             let deletedDish = await axios.post("http://localhost:3000/dishes/deleteDish",{"_id":dishes[i].getAttribute("dishId")})
              if(deletedDish.data.message){
                 window.location.reload();
             }

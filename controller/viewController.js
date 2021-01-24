@@ -1,4 +1,4 @@
-const SECRET_KEY = process.env.SECRET_KEY;
+const { SECRET_KEY } = require("../config/secrets");
 const jwt = require("jsonwebtoken");
 const dishesModel = require("../model/dishesModel");
 const OrdereModel = require("../model/pendingOrderModel");

@@ -12,7 +12,7 @@ window.addEventListener("load",function(){
             for(let i=0;i<names.length;i++){
                 dishes= dishes +names[i].innerHTML.trim()+", ";
             }
-            let order = await axios.post("https://foodcolony.herokuapp.com/order/add" , {amount:amt,dishes:dishes});
+            let order = await axios.post("http://localhost:3000/order/add" , {amount:amt,dishes:dishes});
             alert("Order Confirmed")
             window.location.href = "/menu"
             

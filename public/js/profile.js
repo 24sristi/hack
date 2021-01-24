@@ -6,7 +6,7 @@ window.addEventListener("load", function(){
         let file = editbtn.files[0];
             let formData = new FormData();
         formData.append("user" , file);
-        let obj = await axios.patch("https://foodcolony.herokuapp.com/user/updateprofilephoto" , formData);
+        let obj = await axios.patch("http://localhost:3000/user/updateprofilephoto" , formData);
         console.log(obj);
         if(obj.data.message){
             window.location.reload();

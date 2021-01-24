@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const DB_LINK = process.env.DB_LINK;
+const { DB_LINK } = require("../config/secrets");
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);

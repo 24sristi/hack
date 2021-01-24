@@ -1,4 +1,8 @@
 /*----Media queries----*/
+
+
+
+@media only screen and (max-width: 1500px){
 .header li:nth-child(1){
     margin-right: 30px;
 }
@@ -15,6 +19,7 @@
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-x: -130px;
 }
 .wrap{
     left: 50%;
@@ -46,12 +51,18 @@
 }
 .btns{
     padding-left: 80px;
+    margin-bottom: 15px;
+}
 }
 
 
 
-
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1050px) and (orientation: portrait){
+    .container{
+        background-position-x: -500px;
+    }
+}
+@media only screen and (max-width: 1050px){
 .header li:nth-child(1){
     font-size: medium;
     width: 145px;
@@ -70,9 +81,8 @@
     width: 45%;
 }
 .wrap h1{
-    height: 85px;
     min-width: 100%;
-    font-size: 35px;
+    font-size: 42px;
     margin-bottom: 0px;
 }
 
@@ -98,12 +108,22 @@
 .loginbtn{
     margin-right: 20px;
 }
+.btns{
+    margin-bottom: 40px;
 }
 
 
+}
+@media only screen and (max-width: 850px) and (orientation: landscape){
+    .container{
+        background-position-x: 0px;
+    }
+}
 @media only screen and (max-width: 800px){
 .container{
     background-position : 10%;
+    background-position-x: -330px;
+    
 }
 .header li:nth-child(1),.header li:nth-child(2){
     font-size: small;
@@ -121,9 +141,15 @@
 }
 
 }
+@media only screen and (max-width: 750px) and (orientation: landscape){
+    .container{
+        background-position-x: 0px;
+    }
+}
 @media only screen and (max-width: 720px){
 .container{
     background-position : 30%;
+    background-position-x: -430px;
 }
 .wrap h3{
     font-size: large;
@@ -139,6 +165,7 @@
 }
 
 }
+
 
 @media only screen and (max-width: 650px){
 .wrap h3{
@@ -158,6 +185,14 @@
     width: 120px;
 }
 }
+@media only screen and (max-width: 750px) and (orientation: landscape){
+    .container{
+        background-position-x: 0px;
+    }
+    .wrap h1{
+        font-size: 35px;
+    }
+}
 @media only screen and (max-width: 550px){
 .container{
     background-position : 40%;
@@ -169,48 +204,55 @@
 .btns{
     padding-left: 30px;
 }
+.wrap h1{
+    font-size: 28px;
+}
+
 
 }
 
 @media only screen and (max-width: 450px){
-.wrap h3::after, .wrap h3::before{
-    width: 0px;
-}
-
-.wrap h3{
-    padding-left: 15%;
+    .wrap h3::after, .wrap h3::before{
+        width: 0px;
+    }
+    
+    .wrap h3{
+        padding-left: 15%;
 }
 
 .registerbtn,.loginbtn{
     margin-right: 10px;
 }
 
+.wrap h1{
+    font-size: 25px;
+}
 }
 
 
 @media only screen and (max-width: 380px){
-ul{
-    justify-content: space-around;
-    width: 100%;
-
-
-}
-.header li:nth-child(1){
-    font-size: small;
-    width: 140px;
-    height: 40px;
-    margin: 0%;
-}
-
-.header li:nth-child(2){
-    font-size: small;
-    width: 140px;
-    height: 40px;
-    margin: 0%;
-}
-
-.container{
-    background-color: #faeee2;
+    ul{
+        justify-content: space-around;
+        width: 100%;
+        
+        
+    }
+    .header li:nth-child(1){
+        font-size: small;
+        width: 140px;
+        height: 40px;
+        margin: 0%;
+    }
+    
+    .header li:nth-child(2){
+        font-size: small;
+        width: 140px;
+        height: 40px;
+        margin: 0%;
+    }
+    
+    .container{
+        background-color: #faeee2;
     background-position: -20% ;
     background-size: 400%;
     /* background-image: none; */
@@ -226,7 +268,7 @@ ul{
     height: 80px;
     max-width: 90%;
     min-width: 90%;
-    font-size: 33px;
+    font-size: 30px;
     margin-bottom: 5px;
     padding-left: 5%;
 }
@@ -259,14 +301,22 @@ ul{
 
 .loginbtn{
     margin: 0%;
-
+    
 }
 .registerbtn{
     margin: 0%;
-
+    
 }
 
 
+}
 
+@media only screen and (max-width: 350px){
+.wrap h1{
+    font-size: 26px;
+}
 
+.wrap h3{
+    font-weight: normal;
+}
 }
